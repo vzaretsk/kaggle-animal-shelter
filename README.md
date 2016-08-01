@@ -13,6 +13,7 @@ I used features provided in the training data and generated some additional ones
 
 I originally intended to blend the result of various classifiers using a second stage classifier and a hold out blending subset but that approach performed poorly. A simple arithmetic average of the XGB predicted probabilities, produced with variations of the features and hyper-parameters, gave a ~0.005 leaderboard score increase.
 
+In addition to XGB, I experimented with other classifiers such as random forest, gradient boosting, k-NN, logistic regression with polynomial features, and SVM. None performed as well as XGB, many were significantly worse.
 
 ## File Descriptions
 **clean_data, clean_data_b2** - clean the data, version b2 keeps both breeds if the animal is a mix, the original keeps only the first breed
